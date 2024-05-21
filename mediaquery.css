@@ -1,0 +1,472 @@
+/*----------Fonts---------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (min-width: 1280px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /*=============MainBody==========*/
+    
+    body {
+        background-color: white;
+    }
+    
+    
+    /*=============Header==========*/
+    
+    
+    .header {
+        height: 18dvh;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 30px;
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        background-size: cover;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo img {
+        width: 70px;
+    }
+    
+    .cart span {
+        font-size: 50px;
+    }
+    
+    
+    #container {
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+      }
+    
+    
+      .slider {
+        overflow: hidden;
+      }
+    
+      
+      .slitext {
+        display: inline-block;
+        animation: slideLeft 5s linear infinite;
+      }
+      
+      @keyframes slideLeft {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    
+    
+    
+    
+      .greetings {
+        font-family: "Open Sans", sans-serif;
+        font-size: 25px;
+    }
+    
+    
+    
+    
+    /*=============Hero Section==========*/
+    
+    
+    #hero-image {
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(image/bg01.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    
+    
+    .hero-img img {
+        width: 400px;
+        padding-top: 100px;
+    }
+    
+    
+    .hero-text {
+        padding: 150px 30px;
+        line-height: 40px;
+    }
+    
+    .hero-text h2 {
+        font-family: "Open Sans", sans-serif;
+        font-size: 50px;
+        line-height: 50px;
+        color: black;
+    }
+    
+    .hero-text span {
+        color: rgb(199, 9, 9);
+    }
+    
+    .hero-text p {
+        font-family: "Montserrat", sans-serif;
+        line-height: 20px;
+        padding-top: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(49, 49, 49);
+        width: 450px;
+    }
+    
+    
+    .c2a button {
+        background-color: rgb(199, 9, 9);
+        border: none;
+        border-radius: 4px;
+        width: 30%;
+        height: 37px;
+        position: relative;
+        color: white;
+        top: 15px;
+        cursor: pointer;
+        transition: all .42s ease;
+    }
+    
+    .c2a button:hover {
+        background-color: black;
+    }
+    
+    /*==========Whatsapp Icon=========*/
+    
+    
+      .whatsapp-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+      
+      .whatsapp-btn {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #107f39;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        animation: blink 1s infinite alternate;
+      }
+      
+      .icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+      }
+      
+      @keyframes blink {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.5;
+        }
+      }
+    
+    
+    
+    
+    /*==========Product Category=========*/
+    
+    
+    #product {
+        background-color: white;
+        padding-top: 80px;
+        margin-bottom: 150px;
+    }
+    
+    
+    .p-text {
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(199, 9, 9);
+    }
+    
+    
+    .p-imagegfather {
+        display: grid;
+        grid-template-columns: repeat(4, 260px);
+        gap: 30px;
+        padding-left: 80px;
+    }
+    
+    
+    .p-imagegrandmother {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        padding-top: 40px;
+    }
+    
+    
+    
+    .p-imagemother img {
+        width: 250px;
+    
+    }
+    
+    
+    .pimgtext {
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    .pimgtext h3 {
+        color: rgb(199, 9, 9);
+    }
+    
+    .pimgtext h4 {
+        color: rgb(39, 39, 39);
+    }
+    
+    
+    .pimgtext span {
+        padding-left: 150px;
+        font-size: 12px;
+    }
+    
+    
+    
+    .p-button button {
+        background-color: rgb(199, 9, 9);
+        border: none;
+        border-radius: 4px;
+        width: 20%;
+        height: 45px;
+        position: relative;
+        color: white;
+        top: 15px;
+        cursor: pointer;
+        transition: all .42s ease;
+        margin-left: 500px;
+        margin-top: 60px;
+    }
+    
+    .p-button button:hover {
+        background-color: black;
+    }
+    
+    /*=========Standard Shoke========*/
+    
+    
+    #standard {
+        background-color: #fff4f3;
+        height: 200px;
+    }
+    
+    
+    .mainiconbox {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+    }
+    
+    .s-iconbox {
+        display: flex;
+        flex-direction: row;
+        padding: 45px;
+    }
+    
+    
+    .s-iconbox span {
+        color: rgb(199, 9, 9);
+    }
+    
+    
+    .s-iconbox h4 {
+        color: rgb(199, 9, 9);
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    .s-iconbox p {
+        color: rgb(39, 39, 39);
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+    }
+    
+    .icontext {
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+    }
+    
+    /*=========Other Products========*/
+    
+    
+    #o-products {
+        background-color: #fff4f3;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    /* .o-image {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(20, 20, 20);
+        border-radius: 10px;
+        width: 320px;
+        height:200px;
+        color: white;
+        align-content: center;
+        position: relative;
+        
+        margin-top: 70px;
+    } */
+    
+    .o-image img{
+        width: 400px;
+        border-radius: 2px;
+        /* background-color: rgb(199, 9, 9); */
+        
+    }
+    
+    .o-text {
+        padding-top: 80px;
+        /* padding-left: 150px;
+        padding-right: 100px; */
+    }
+    
+    .o-text h3 {
+        color: rgb(199, 9, 9);
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    .o-text p {
+        width: 300px;
+        color: rgb(39, 39, 39);
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    
+    /*=========van moving========*/
+    
+    .container {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        background-color: rgb(199, 9, 9);
+      }
+    
+      .van {
+        position: absolute;
+        top: 50%;
+        right: -200px;
+        transform: translate(0, -50%);
+        width: 200px;
+        height: 100px;
+        background-image: url('image/van.png'); 
+        background-size: cover;
+        animation: moveVan 5s linear infinite;
+      }
+    
+      .reveal-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px; /* Adjust font size as needed */
+        color: #fff;
+        opacity: 0;
+        animation: revealText 5s linear infinite;
+        font-family: "Montserrat", sans-serif;
+        justify-content: center;
+        text-align: center;
+        
+      }
+    
+    
+    
+      .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color:rgb(199, 9, 9); 
+        animation: revealText 5s linear infinite;
+      }
+    
+      @keyframes moveVan {
+        0% {
+          right: 0;
+        }
+        50% {
+          right: 50%;
+        }
+        100% {
+          right: 100%;
+        }
+      }
+    
+      @keyframes revealText {
+        0% {
+          opacity: 0;
+        }
+        25% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+        }
+        100% {
+            opacity: 1;
+          }
+      }
+    
+      .animatedbutton {
+        padding: 10px 20px;
+        background-color: #fefeff;
+        color: #e23535;
+        border: none;
+        border-radius: 4px;
+        margin-left: 550px;
+        margin-top: 150px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+
+}
+
+
+
+  
+
+
