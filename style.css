@@ -90,10 +90,7 @@ a {
 
 
 
-  /*=============Hero Section==========*/
-
-
-#hero-image {
+  #hero-image {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -107,6 +104,16 @@ a {
     grid-template-columns: 1fr;
 }
 
+.hero-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content.active {
+    display: flex;
+}
 
 .hero-img img {
     width: 300px;
@@ -114,7 +121,6 @@ a {
     position: relative;
     bottom: 30px;
 }
-
 
 .hero-text {
     justify-content: center;
@@ -146,16 +152,11 @@ a {
     text-align: center;
     position: relative;
     top: 20px;
-
 }
-
 
 .c2a {
     margin-top: -30px;
 }
-
-
-
 
 .c2a button {
     display: block;
@@ -172,12 +173,12 @@ a {
     font-family: "Montserrat", sans-serif;
     font-size: 100%;
     top: 40px;
-    
 }
 
 .c2a button:hover {
     background-color: black;
 }
+
 
 /*==========Whatsapp Icon=========*/
 
