@@ -219,6 +219,112 @@ a {
 
 
 
+
+  /*=============More Products=========*/
+
+  
+#morep {
+  padding-left: 20px;
+  margin-bottom: 100px;
+  overflow-x: hidden;
+}
+
+
+.morepic {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  overflow-x: auto;
+-webkit-overflow-scrolling: touch; 
+overflow-scrolling: touch; 
+
+}
+
+.proimage {
+  position: relative;
+  max-width: 100%;
+  
+}
+
+.proimage img {
+  width: 300px;
+  
+}
+
+
+
+.proimage h6 {
+  position: absolute;
+  top: 10px;
+  left: 85%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  width: 35px;
+  height: 35px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.textinfo {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  height: 15%;
+  width: 80%;
+  margin-top: -20px;
+  margin-left: 9%;
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 3%;
+}
+
+.probtn {
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 50%;
+  border: 1px solid black;
+  position: relative;
+  left: 70px;
+}
+
+.probtn button {
+  background-color: transparent;
+  border: none;
+  padding: 18px 12px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: medium;
+}
+
+.proprice {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  padding-left: 0%;
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.probtn button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px 12px;
+ width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 /*==========Product Category=========*/
 
 
